@@ -1,0 +1,306 @@
+.seWrap .content section footer .nav li::before, .seWrap .content section .seHeader p::before, .seWrap .content section .seHeader .poPlan::before, .seWrap .content section .seHeader h2::before, .hdrWrap nav::before, .hdrWrap header .poTitle::before, .abtWrap .segment::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: red;
+}
+
+.seWrap .content section article .img, .seWrap .content section footer .img, .abtWrap header h1, .main h1 {
+  background-size: cover;
+  background-position: center;
+}
+
+.hdrWrap h1, .abtWrap header h1, .main h1 {
+  transform-origin: center;
+  animation-duration: 12s;
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.main h1 {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-image: url("../img/logo.png");
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper {
+  width: 300%;
+  height: auto;
+  display: flex;
+  margin: 0;
+  position: static;
+  margin-left: 0;
+  height: 100vh;
+}
+.wrapper .page {
+  width: 33.33%;
+  overflow: hidden;
+}
+.wrapper .pg1 {
+  background-color: #222;
+}
+.wrapper .pg2 {
+  background-color: white;
+}
+
+.abtWrap {
+  color: white;
+  padding: 40px 10vw;
+  text-align: right;
+  position: relative;
+}
+.abtWrap header h1 {
+  display: block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 100px;
+  background-image: url("../img/logo.png");
+  margin: 0 auto;
+  cursor: pointer;
+}
+.abtWrap header h2 {
+  display: none;
+}
+.abtWrap .segment:nth-child(2) {
+  margin-top: 40px;
+}
+.abtWrap .segment::before {
+  margin-left: auto;
+}
+.abtWrap h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+.abtWrap h4 {
+  font-size: 12px;
+  line-height: 30px;
+}
+.abtWrap span {
+  font-size: 16px;
+}
+
+.hdrWrap {
+  padding: 40px 0;
+  padding-left: 3vw;
+  position: relative;
+}
+.hdrWrap h1 {
+  display: none;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ccc;
+}
+.hdrWrap header {
+  position: absolute;
+  height: 140px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.hdrWrap header .poTitle {
+  height: 80px;
+  overflow: hidden;
+}
+.hdrWrap header .poTitle h2 {
+  font-family: "Scheherazade", serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 80px;
+  color: black;
+  cursor: pointer;
+}
+.hdrWrap header .poTitle::before {
+  margin-left: 4px;
+}
+.hdrWrap header .poTarget, .hdrWrap header .poTerm {
+  height: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.hdrWrap header .poTerm {
+  margin-top: 0;
+}
+.hdrWrap header .poTerm h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.hdrWrap .indicator {
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+}
+.hdrWrap .indicator li {
+  height: 10px;
+  width: 20px;
+  background-color: #ccc;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: auto;
+}
+.hdrWrap .indicator li:first-child {
+  width: 30px;
+}
+.hdrWrap nav {
+  width: 120px;
+  overflow: hidden;
+  position: absolute;
+  left: 3vw;
+  bottom: 40px;
+  cursor: pointer;
+}
+.hdrWrap nav ul {
+  display: flex;
+  width: 240px;
+}
+.hdrWrap nav ul li {
+  width: 120px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 30px;
+}
+.seWrap {
+  position: relative;
+}
+.seWrap .content {
+  display: block;
+  height: 100vh;
+  overflow: auto;
+}
+.seWrap .content header {
+  display: none;
+}
+.seWrap .content section {
+  width: 100%;
+  overflow: auto;
+  padding: 40px 0;
+}
+.seWrap .content section .seHeader {
+  width: 80%;
+  margin: 0 auto;
+}
+.seWrap .content section .seHeader h2 {
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  font-family: "Scheherazade", serif;
+}
+.seWrap .content section .seHeader .poPlan {
+  margin-top: 20px;
+}
+.seWrap .content section .seHeader .poPlan h3 {
+  margin-top: 0;
+  font-size: 12px;
+  color: black;
+}
+.seWrap .content section .seHeader .poPlan h4 {
+  font-size: 12px;
+}
+.seWrap .content section .seHeader .poPlan button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #999;
+  color: black;
+  box-shadow: 2px 1px 5px #ccc;
+}
+.seWrap .content section .seHeader p {
+  margin-top: 20px;
+}
+.seWrap .content section article, .seWrap .content section footer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.seWrap .content section article .img, .seWrap .content section footer .img {
+  width: 100%;
+  height: 440px;
+  background-color: #ccc;
+}
+.seWrap .content section footer .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.seWrap .content section footer .nav li {
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+}
+.seWrap .content section footer .nav li:last-child {
+  display: block;
+}
+.seWrap .ct1 .i1 {
+  background-image: url("../img/pe_i1.jpg");
+}
+.seWrap .ct1 .i2 {
+  background-image: url("../img/pe_i2.jpg");
+}
+.seWrap .ct1 .i3 {
+  background-image: url("../img/pe_i3.jpg");
+}
+.seWrap .ct2 .i1 {
+  background-image: url("../img/bo_i1.jpg");
+}
+.seWrap .ct2 .i2 {
+  background-image: url("../img/bo_i2.jpg");
+}
+.seWrap .ct2 .i3 {
+  background-image: url("../img/bo_i3.jpg");
+}
+.seWrap .ct3 .i1 {
+  background-image: url("../img/real_i1.jpg");
+}
+.seWrap .ct3 .i2 {
+  background-image: url("../img/real_i2.jpg");
+}
+.seWrap .ct3 .i3 {
+  background-image: url("../img/real_i3.jpg");
+}
+
+/*# sourceMappingURL=index.mobile.css.map */

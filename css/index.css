@@ -1,0 +1,325 @@
+.wrapper .seWrap .content section footer .nav li::before, .wrapper .seWrap .content section .seHeader .poPlan p::before, .wrapper .seWrap .content section .seHeader h2::before, .wrapper .hdrWrap nav::before, .wrapper .hdrWrap header .poTitle::before, .wrapper .abtWrap section .segment::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: red;
+}
+
+.wrapper .seWrap .content section article .img, .wrapper .seWrap .content section footer .img, .wrapper .seWrap .content header, .wrapper .hdrWrap h1, .main h1 {
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper .hdrWrap h1, .main h1 {
+  transform-origin: center;
+  animation-duration: 12s;
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.main h1 {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-image: url("../img/logo.png");
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  margin-left: -50vw;
+  position: fixed;
+  top: 0;
+}
+.wrapper .page {
+  width: 25%;
+}
+.wrapper .pg1 {
+  background-color: #222;
+}
+.wrapper .pg2 {
+  background-color: white;
+}
+.wrapper .pg3 {
+  width: 50%;
+  overflow: hidden;
+}
+.wrapper .abtWrap {
+  color: white;
+  padding: 60px 0;
+  text-align: right;
+  padding-right: 3vw;
+}
+.wrapper .abtWrap h1 {
+  display: none;
+}
+.wrapper .abtWrap h2 {
+  font-family: "Scheherazade", serif;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 36px;
+}
+.wrapper .abtWrap section .segment {
+  margin-top: 80px;
+}
+.wrapper .abtWrap section .segment h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+.wrapper .abtWrap section .segment h4 {
+  margin-top: 10px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 36px;
+}
+.wrapper .abtWrap section .segment h4 span {
+  font-size: 16px;
+}
+.wrapper .abtWrap section .segment::before {
+  margin-left: auto;
+}
+.wrapper .hdrWrap {
+  padding: 40px 0;
+  padding-left: 3vw;
+  position: relative;
+}
+.wrapper .hdrWrap h1 {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url("../img/logo.jpg");
+}
+.wrapper .hdrWrap header {
+  position: absolute;
+  height: 140px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.wrapper .hdrWrap header .poTitle {
+  height: 80px;
+  overflow: hidden;
+}
+.wrapper .hdrWrap header .poTitle div h2 {
+  font-family: "Scheherazade", serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 80px;
+  color: black;
+}
+.wrapper .hdrWrap header .poTitle::before {
+  margin-left: 4px;
+}
+.wrapper .hdrWrap header .poTarget, .wrapper .hdrWrap header .poTerm {
+  height: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.wrapper .hdrWrap header .poTarget div h3, .wrapper .hdrWrap header .poTerm div h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrapper .hdrWrap header .poTerm {
+  margin-top: 0;
+}
+.wrapper .hdrWrap .indicator {
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+}
+.wrapper .hdrWrap .indicator li {
+  height: 10px;
+  width: 20px;
+  background-color: #ccc;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: auto;
+}
+.wrapper .hdrWrap .indicator li:first-child {
+  width: 30px;
+}
+.wrapper .hdrWrap nav {
+  width: 120px;
+  overflow: hidden;
+  position: absolute;
+  left: 3vw;
+  bottom: 40px;
+  cursor: pointer;
+}
+.wrapper .hdrWrap nav ul {
+  display: flex;
+  width: 240px;
+}
+.wrapper .hdrWrap nav ul li {
+  width: 120px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 30px;
+}
+.wrapper .seWrap {
+  position: relative;
+}
+.wrapper .seWrap .content {
+  display: flex;
+  height: 100vh;
+}
+.wrapper .seWrap .content header {
+  width: 50%;
+  background-color: blue;
+  position: relative;
+}
+.wrapper .seWrap .content header button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  transform-origin: center;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  border-radius: 80px;
+  background-color: red;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.wrapper .seWrap .content header button:hover {
+  width: 70px;
+  height: 70px;
+  left: 35px;
+}
+.wrapper .seWrap .content section {
+  width: 50%;
+  overflow: auto;
+  padding: 80px 0;
+}
+.wrapper .seWrap .content section .seHeader {
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper .seWrap .content section .seHeader h2 {
+  line-height: 120px;
+  font-weight: bold;
+  font-size: 48px;
+  color: black;
+  font-family: "Scheherazade", serif;
+}
+.wrapper .seWrap .content section .seHeader .poPlan h3 {
+  font-size: 12px;
+  color: black;
+}
+.wrapper .seWrap .content section .seHeader .poPlan h4 {
+  font-size: 12px;
+}
+.wrapper .seWrap .content section .seHeader .poPlan button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #999;
+  color: black;
+  box-shadow: 2px 1px 5px #ccc;
+  margin-bottom: 20px;
+}
+.wrapper .seWrap .content section .seHeader .poPlan p {
+  margin-top: 40px;
+}
+.wrapper .seWrap .content section .seHeader .poPlan p::before {
+  margin-bottom: 40px;
+}
+.wrapper .seWrap .content section article, .wrapper .seWrap .content section footer {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.wrapper .seWrap .content section article .img, .wrapper .seWrap .content section footer .img {
+  width: 100%;
+  height: 440px;
+  background-color: #ccc;
+}
+.wrapper .seWrap .content section footer .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .seWrap .content section footer .nav li {
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+}
+.wrapper .seWrap .ct1 header {
+  background-image: url("../img/pe_main.jpg");
+}
+.wrapper .seWrap .ct1 .i1 {
+  background-image: url("../img/pe_i1.jpg");
+}
+.wrapper .seWrap .ct1 .i2 {
+  background-image: url("../img/pe_i2.jpg");
+}
+.wrapper .seWrap .ct1 .i3 {
+  background-image: url("../img/pe_i3.jpg");
+}
+.wrapper .seWrap .ct2 header {
+  background-image: url("../img/bo_main.jpg");
+}
+.wrapper .seWrap .ct2 .i1 {
+  background-image: url("../img/bo_i1.jpg");
+}
+.wrapper .seWrap .ct2 .i2 {
+  background-image: url("../img/bo_i2.jpg");
+}
+.wrapper .seWrap .ct2 .i3 {
+  background-image: url("../img/bo_i3.jpg");
+}
+.wrapper .seWrap .ct3 header {
+  background-image: url("../img/real_main.jpg");
+}
+.wrapper .seWrap .ct3 .i1 {
+  background-image: url("../img/real_i1.jpg");
+}
+.wrapper .seWrap .ct3 .i2 {
+  background-image: url("../img/real_i2.jpg");
+}
+.wrapper .seWrap .ct3 .i3 {
+  background-image: url("../img/real_i3.jpg");
+}
+
+/*# sourceMappingURL=index.css.map */
